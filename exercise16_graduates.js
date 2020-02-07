@@ -1,9 +1,9 @@
 function graduates(students) {
   // Code disini
-  obj = {};
-  for (i = 0; i < students.length; i++) {
-    classes = students[i].class;
-    if (obj[classes] == undefined) {
+  let obj = {};
+  for (let i = 0; i < students.length; i++) {
+    let classes = students[i].class;
+    if (!obj[classes]) {
       obj[classes] = [];
     }
     if (students[i].score > 75) {

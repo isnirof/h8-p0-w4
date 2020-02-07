@@ -1,18 +1,17 @@
 function digitPerkalianMinimum(angka) {
   // you can only write your code here!
-  faktor1 = 0;
-  faktor2 = 0;
-  min = 0;
-  for (i = 1; i <= angka; i++) {
+  let faktor1 = 0;
+  let faktor2 = 0;
+  let min = 0;
+  for (let i = 1; i <= angka; i++) {
     if (angka % i == 0) {
       faktor1 = i;
       faktor2 = angka / i;
       digit = String(faktor1).length + String(faktor2).length;
     }
-    if (digit < min || min==0) {
+    if (digit < min || min == 0) {
       min = digit;
     }
-
   }
   return min;
 

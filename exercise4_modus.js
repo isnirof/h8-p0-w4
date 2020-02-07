@@ -1,9 +1,9 @@
 function cariModus(arr) {
   // you can only write your code here!
-  hasil = [];
-  for (i = 0; i < arr.length; i++) {
-    value = false;
-    for (j = 0; j < hasil.length; j++) {
+  let hasil = [];
+  for (let i = 0; i < arr.length; i++) {
+    let value = false;
+    for (let j = 0; j < hasil.length; j++) {
       if (arr[i] == hasil[j][0]) {
         hasil[j][1]++;
         value = true;
@@ -15,26 +15,20 @@ function cariModus(arr) {
   }
 
   //sort dari yg terbesar
-  run = true;
+  let run = true;
   while (run) {
     run = false;
-    for (i = 0; i < hasil.length - 1; i++) {
+    for (let i = 0; i < hasil.length - 1; i++) {
       if (hasil[i][1] < hasil[i + 1][1]) {
         [hasil[i], hasil[i + 1]] = [hasil[i + 1], hasil[i]];
         run = true;
       }
     }
   }
-  if (hasil.length == 1) {
+  if (hasil.length == 1 || hasil[0][1] == 1) {
     return -1;
   }
-  else if (hasil[0][1] == 1) {
-    return -1;
-  }
-  else {
-    return hasil[0][0];
-  }
-
+  return hasil[0][0];
 }
 
 // TEST CASES

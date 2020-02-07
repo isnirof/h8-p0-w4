@@ -1,8 +1,8 @@
 function cariMedian(arr) {
     // you can only write your code here!
-    run = true;
+    let run = true;
     while (run) {
-        for (i = 0; i < arr.length - 1; i++) {
+        for (let i = 0; i < arr.length - 1; i++) {
             run = false;
             if (arr[i] > arr[i + 1]) {
                 [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
@@ -10,7 +10,7 @@ function cariMedian(arr) {
             }
         }
     }
-    // console.log(arr);
+    let median
     if (arr.length % 2 == 0) {
         median = (arr[arr.length / 2] + arr[(arr.length / 2) - 1]) / 2;
     }

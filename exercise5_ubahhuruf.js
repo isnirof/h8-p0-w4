@@ -1,16 +1,15 @@
 function ubahHuruf(kata) {
   // you can only write your code here!
-  ubah='';
-  for(i=0;i<kata.length;i++) {
-    if(kata[i]=='z') {
-      ubah+='a';
+  let result = '';
+  for (let i = 0; i < kata.length; i++) {
+    if (kata[i] == 'z') {
+      result += 'a';
     }
     else {
-      next=Number(kata.charCodeAt(i)) + 1;
-      ubah+=String.fromCharCode(next);
+      result += String.fromCharCode(Number(kata.charCodeAt(i)) + 1);
     }
   }
-  return ubah;
+  return result;
 }
 
 // TEST CASES

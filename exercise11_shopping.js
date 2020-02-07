@@ -1,21 +1,22 @@
 function shoppingTime(memberId, money) {
     // you can only write your code here!
-    barang = [['Sepatu Stacattu', 1500000],
+    let barang = [['Sepatu Stacattu', 1500000],
     ['Baju Zoro', 500000],
     ['Baju H&N', 250000],
     ['Sweater Uniklooh', 175000],
     ['Casing Handphone', 50000]];
 
-    beli = [];
-    obj = {};
+    let beli = [];
+    let obj = {};
     if (!memberId) {
         return 'Mohon maaf, toko X hanya berlaku untuk member saja'
     }
     if (money < barang[4][1]) {
         return 'Mohon maaf, uang tidak cukup'
     }
-    sisa = money;
-    for (var i = 0; i < barang.length; i++) {
+
+    let sisa = money;
+    for (let i = 0; i < barang.length; i++) {
         if (sisa >= barang[i][1]) {
             beli.push(barang[i][0])
             sisa -= barang[i][1];

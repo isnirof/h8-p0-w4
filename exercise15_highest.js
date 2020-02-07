@@ -1,9 +1,9 @@
 function highestScore(students) {
   // Code disini
-  var hasil = {};
-  for (i = 0; i < students.length; i++) {
-    var kelas = students[i].class
-    if (hasil[kelas] == undefined) {
+  let hasil = {};
+  for (let i = 0; i < students.length; i++) {
+    let kelas = students[i].class
+    if (!hasil[kelas]) {
       hasil[kelas] = {
         name: students[i].name,
         score: students[i].score

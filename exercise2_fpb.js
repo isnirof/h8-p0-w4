@@ -1,6 +1,7 @@
 function fpb(angka1, angka2) {
   // you can only write your code here!
-  for (i = 0; i < angka2; i++) {
+  let faktor
+  for (let i = 0; i < angka2; i++) {
     if (angka1 % i == 0 && angka2 % i == 0) {
       faktor = i;
     }

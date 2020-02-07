@@ -1,6 +1,6 @@
-function checkAB(num) {
-    for (i = 0; i < num.length; i++) {
-        if ((num[i] === 'a' && num[i + 4] === 'b') || (num[i] === 'b' && num[i + 4] === 'a')) {
+function checkAB(sentence) {
+    for (let i = 0; i < sentence.length; i++) {
+        if ((sentence[i] === 'a' && sentence[i + 4] === 'b') || (sentence[i] === 'b' && sentence[i + 4] === 'a')) {
             return true;
         }
     }

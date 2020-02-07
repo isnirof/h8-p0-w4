@@ -1,7 +1,7 @@
 function tukarBesarKecil(kalimat) {
     // you can only write your code here!
-    tukar = '';
-    for (i = 0; i < kalimat.length; i++) {
+    let tukar = '';
+    for (let i = 0; i < kalimat.length; i++) {
         if (kalimat[i] == kalimat[i].toLowerCase()) {
             tukar += kalimat[i].toUpperCase();
         }

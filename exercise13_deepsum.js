@@ -3,10 +3,10 @@ function deepSum(arr) {
   if (!arr.length) {
     return `No number`;
   }
-  sum = 0;
-  for (i = 0; i < arr.length; i++) {
-    for (j = 0; j < arr[i].length; j++) {
-      for (k = 0; k < arr[i][j].length; k++) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr[i].length; j++) {
+      for (let k = 0; k < arr[i][j].length; k++) {
         sum += arr[i][j][k];
       }
     }

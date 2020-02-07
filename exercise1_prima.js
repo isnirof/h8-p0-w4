@@ -1,12 +1,12 @@
 function angkaPrima(angka) {
-  for (var i = 2; i < angka; i++) {
-    if (angka == 1) {
-      return false;
-    }
-    else if (angka == 2) {
-      return true;
-    }
-    else if (angka % i == 0) {
+  if (angka == 1) {
+    return false;
+  }
+  else if (angka == 2) {
+    return true;
+  }
+  for (let i = 2; i < angka; i++) {
+    if (angka % i == 0) {
       return false;
     }
   }
